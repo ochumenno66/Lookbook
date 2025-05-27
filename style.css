@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 20px 0 20px 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  padding: 20px 0 20px 10px;
+}
+
+.img_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+img {
+  width: 49%;
+  border-radius: 20px;
+}
+
+/* Adaptiv */
+@media (max-width: 1020px) {
+  .img_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
